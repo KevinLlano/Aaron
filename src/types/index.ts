@@ -60,3 +60,12 @@ export interface StreamSchedule {
   game: string;
   description?: string;
 }
+
+export interface BlogPost {
+  title: string;
+  excerpt: string;
+  href: string;
+  image: string;
+  date: string;
+  tags: string[];
+}

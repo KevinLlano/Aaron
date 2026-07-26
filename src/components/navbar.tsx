@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { Menu, X, Twitch, Home, User, Play, Image, MessageCircle, ExternalLink } from 'lucide-react';
+import { Menu, X, Twitch, Home, User, Play, Image, BookOpen, MessageCircle, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { ThemeToggle } from './theme-toggle';
 import { streamerInfo } from '@/lib/data';
@@ -13,6 +13,7 @@ const navigation = [
   { name: 'About', href: '/#about', icon: User },
   { name: 'Video Clips', href: '/#clips', icon: Image },
   { name: 'Stream Schedule', href: '/#schedule', icon: Play },
+  { name: 'Blog', href: '/blog', icon: BookOpen },
   { name: 'Contact', href: '/contact', icon: MessageCircle },
 ];
 
@@ -71,7 +72,7 @@ export default function Navbar() {
               const Icon = item.icon;
               const isSection = item.href.startsWith('/#');
               const isActive = isSection 
-                ? false // We'll handle active states for sections differently
+                ? false
                 : pathname === item.href;
               
               if (isSection) {

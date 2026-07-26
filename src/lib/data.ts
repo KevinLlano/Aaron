@@ -1,4 +1,4 @@
-import { Project, SocialLink, StreamSchedule } from '@/types';
+import { BlogPost, Project, SocialLink, StreamSchedule } from '@/types';
 
 export const streamerInfo = {
   name: "MaddWrath",
@@ -33,7 +33,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     platform: "TikTok",
-    url: "https://www.tiktok.com/@maddwrath",
+    url: "https://www.tiktok.com/@maddwrath_?lang=en-GB",
     icon: "tiktok",
     color: "#ec4899" 
   },
@@ -77,6 +77,19 @@ export const streamSchedule: StreamSchedule[] = [
     game: "Variety Night",
     description: "Chat Interaction"
   }
+];
+
+// Add more posts here when ready (e.g. Old School Runescape)
+export const blogPosts: BlogPost[] = [
+  {
+    title: "Guild Wars 2 Beginner Guide: Tips, Leveling & More",
+    excerpt:
+      "A beginner-friendly Guild Wars 2 guide covering tips, leveling, classes, mounts, gold farming, and endgame progression.",
+    href: "https://maddwrathgw2.vercel.app/",
+    image: "/images/blog/guild-wars-2.jpg",
+    date: "2026-07-26",
+    tags: ["Guild Wars 2", "Beginner Guide", "MMO"],
+  },
 ];
 
 export const projects: Project[] = [
