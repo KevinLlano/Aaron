@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import { streamerInfo, socialLinks, streamSchedule } from '@/lib/data';
 import { formatViewCount } from '@/lib/utils';
 import ContactForm from '@/components/ContactForm';
+import { LiveClocks } from '@/components/live-clocks';
 
 export default function Home() {
   const [isLive, setIsLive] = useState(false);
@@ -106,6 +107,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
+              <LiveClocks />
               <div className="aspect-video bg-gradient-to-br from-purple-500 to-blue-600 rounded-lg overflow-hidden shadow-2xl">
                 <iframe
                   src={`https://player.twitch.tv/?channel=maddwrath&parent=${twitchParents}`}

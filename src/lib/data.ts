@@ -90,6 +90,15 @@ export const blogPosts: BlogPost[] = [
     date: "2026-07-26",
     tags: ["Guild Wars 2", "Beginner Guide", "MMO"],
   },
+  {
+    title: "Old School Runescape Guide (Coming Soon)",
+    excerpt:
+      "An OSRS beginner guide is on the way. Join the Discord for updates, tips, and stream talk in the meantime.",
+    href: "https://discord.gg/A6Xddn4YEq",
+    image: "/images/blog/osrs.jpg",
+    date: "2026-07-26",
+    tags: ["OSRS", "Coming Soon", "MMO"],
+  },
 ];
 
 export const projects: Project[] = [
